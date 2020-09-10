@@ -11,6 +11,6 @@ class CashRegister
     @total.to_f += price.to_f
 
   end
-    
-    
+
+
 end
