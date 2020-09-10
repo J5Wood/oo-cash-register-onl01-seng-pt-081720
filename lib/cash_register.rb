@@ -15,9 +15,12 @@ class CashRegister
 
   def apply_discount
     binding.pry
-    @total = @total - (@total * (@discount * 0.01))
-    "After the discount, the total comes to $#{@total.to_i}."
-    
+    if @discount == nil
+      "There is no discount to apply."
+    else
+      @total = @total - (@total * (@discount * 0.01))
+      "After the discount, the total comes to $#{@total.to_i}."
+    end
   end
 
 end
