@@ -39,7 +39,8 @@ class CashRegister
       @total = 0
     else
     @total = @previous_price
-
+    end
+  end
 
 
 end
