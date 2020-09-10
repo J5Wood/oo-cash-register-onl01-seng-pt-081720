@@ -2,7 +2,7 @@ require 'pry'
 
 class CashRegister
 
-  attr_accessor :total, :discount, :cart, :previous_price, :previous_quantity
+  attr_accessor :total, :discount, :cart, :previous_price
 
   def initialize(discount = nil)
     @total = 0
@@ -11,7 +11,6 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-    @previous_quantity = quantity
     @previous_price = @total
     i = 0
     while i < quantity do
