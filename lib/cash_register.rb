@@ -2,7 +2,7 @@ require 'pry'
 
 class CashRegister
 
-  attr_accessor :total, :discount, :item
+  attr_accessor :total, :discount, :cart
 
   def initialize(discount = nil)
     @total = 0
@@ -10,7 +10,7 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-    cart << title
+    @cart << title
     @total += price * quantity
   end
 
