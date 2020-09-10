@@ -17,7 +17,7 @@ class CashRegister
     binding.pry
     @total = @total - (@total * (@discount * 0.01))
     "After the discount, the total comes to $#{@total.to_i}."
-    end
+    
   end
 
 end
