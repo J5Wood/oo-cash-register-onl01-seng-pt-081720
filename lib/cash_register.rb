@@ -35,11 +35,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    i = 0
-    while i < @previous_quantity
-      @cart = @cart.pop
-      i +=1
-    end
+    @cart = @cart.pop
     if @cart.length == 0
       @total = 0
     else
